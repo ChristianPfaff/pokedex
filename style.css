@@ -26,13 +26,18 @@ body {
   position: relative;
 }
 
-.pokemonPicture {
+#pokemonPicture {
   width: 500px;
   height: 500px;
-  background-position: center;
-  background-size: cover;
   margin-top: -340px;
-  background-image: url("");
+}
+
+@media (max-width: 400px) {
+  #pokemonPicture {
+    width: 300px;
+    height: 300px;
+    margin-top: -205px;
+  }
 }
 
 .menu-bar {
@@ -43,8 +48,8 @@ body {
 .nav a {
   text-decoration: none;
   color: lightgray;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .nav a:hover {
@@ -52,4 +57,23 @@ body {
   text-underline-offset: 30px;
   color: black;
   text-decoration-color: blue;
+}
+
+.itemPok {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 170px !important;
+}
+
+.item {
+  padding: 0px 130px 0 48px;
+}
+
+.controllArticle {
+  padding-right: 20px;
+}
+
+.progress {
+  width: 300px;
 }

@@ -10,10 +10,10 @@ async function loadPokemon() {
 
 function renderPokemonInfo() {
   document.getElementById("pokemonName").innerHTML = currentPokemon["name"];
-
-  let imgPokemont = currentPokemon["sprites"]["front_default"];
-  console.log(imgPokemont);
-
+  document.getElementById("pokemonPicture").src = currentPokemon["sprites"]["front_default"];
+  //let urlImgCharmander = currentPokemon["sprites"]["front_default"];
+  //console.log(currentPokemon["sprites"]["front_default"]);
+  //let urlImgCharmander = " C:\Users\Franz\Documents\Lergang Webprogrammierer\Module\Modul_6_Javascript Einführung\Übungen\3-Bild ändern\Berghaupten.jpg";
   //document.getElementById("pokemonPicture").backgroundImage = "url('imgPokemont')";
-  document.getElementsByClassName('pokemonPicture').style.backgroundImage = 'url(imgPokemont)';
+  //document.getElementsByClassName('pokemonPicture').style.backgroundImage = "url(currentPokemon["sprites"]["front_default"])";
 }
