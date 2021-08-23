@@ -77,3 +77,11 @@ body {
 .progress {
   width: 330px;
 }
+
+.final-Text {
+  width: 568px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 50px;
+}

@@ -7,7 +7,6 @@
     <title>Pokemon</title>
 
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
 
     <!-- Bootstrap CSS   -->
     <link
@@ -34,36 +33,19 @@
       <h1 id="pokemonName"></h1>
     </div>
 
-    <div class="container info-container">
+    <div id="divMain" class="container info-container">
       <img id="pokemonPicture" />
-      <!-- <div id="pokemonPicture"></div> -->
       <nav class="nav nav-pills flex-column flex-sm-row menu-bar">
         <a class="flex-sm-fill text-sm-center nav-link" href="#">About</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="#">Base Stats</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">Evolution</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">Moves</a>
+        <a class="flex-sm-fill text-sm-center nav-link disabled" href="#">Evolution</a>
+        <a class="flex-sm-fill text-sm-center nav-link disabled" href="#">Moves</a>
       </nav>
 
-      <table width="570" class="bg-warning">
-        <tr>
-          <td width="160" class="styleDateSet-1">HP</td>
-          <td class="d-flex align-items-center styleDateSet-2">
-            25%
-            <div class="mx-3 progress">
-              <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td width="160" class="styleDateSet-1">kkkkkkkkkk</td>
-          <td class="d-flex align-items-center styleDateSet-2">
-            25%
-            <div class="mx-3 progress">
-              <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </td>
-        </tr>
-      </table>
+      <!-- <table id="pokemonData" width="570"></table> -->
     </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,21 @@
+<table width="570" class="bg-warning">
+      <tr>
+        <td id="item-1" width="160" class="styleDateSet-1">${item_1}</td>
+        <td class="d-flex align-items-center styleDateSet-2">
+          25%
+          <div class="mx-3 progress">
+            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td id="item-2" width="160" class="styleDateSet-1">${item_2}</td>
+        <td class="d-flex align-items-center styleDateSet-2">
+          25%
+          <div class="mx-3 progress">
+            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </td>
+      </tr>
+</table>
+  `
