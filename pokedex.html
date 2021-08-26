@@ -28,21 +28,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
   </head>
 
-  <body onload="loadPokemon()">
-    <div id="pokedex" class="container">
+  <body>
+    <div class="cssbnt">
+      <button id="btnBul" onclick="btnBul()" style="z-index: 500">Bulbasaur</button>
+      <button id="btnChar" onclick="btnChar()" style="z-index: 500">Charmander</button>
+    </div>
+
+    <div id="pokedex" class="container d-none">
       <h1 id="pokemonName"></h1>
     </div>
 
-    <div id="divMain" class="container info-container">
+    <div id="divMain" class="container info-container d-none">
       <img id="pokemonPicture" />
       <nav class="nav nav-pills flex-column flex-sm-row menu-bar">
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">About</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">Base Stats</a>
+        <a id="idAbout" class="flex-sm-fill text-sm-center nav-link disabled" onclick="about()">About</a>
+        <a id="idbaseStas" class="flex-sm-fill text-sm-center nav-link" onclick="baseStats()">Base Stats</a>
         <a class="flex-sm-fill text-sm-center nav-link disabled" href="#">Evolution</a>
         <a class="flex-sm-fill text-sm-center nav-link disabled" href="#">Moves</a>
       </nav>
-
-      <!-- <table id="pokemonData" width="570"></table> -->
+      <table id="idTable" class="d-none"></table>
+      <div id="idFinalText" class="idFinalText d-none"></div>
+      <table id="idTableAbout"></table>
     </div>
 
     <!-- JS -->

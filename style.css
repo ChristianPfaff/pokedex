@@ -4,7 +4,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-#pokedex {
+.pokedexCharmander {
   object-fit: contain;
   min-height: 50vh;
   background-color: #fb6c6c;
@@ -78,10 +78,23 @@ body {
   width: 330px;
 }
 
-.final-Text {
+.idFinalText {
   width: 568px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 50px;
+}
+
+.d-none {
+  display: none;
+}
+
+.styleDateSet-1 {
+  font-weight: bold;
+}
+
+.cssbnt {
+  display: flex;
+  justify-content: center;
 }
